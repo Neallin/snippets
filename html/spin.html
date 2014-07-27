@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+	html,body{position: relative;height: 100%;}
+	.box{display: table;background: green;height: auto;position: absolute;top:0;bottom:0;right:0;left:0;margin:auto;overflow: auto;max-height: 100px;width: 100%;}
+
+.spinner {
+width: 18px;
+height: 18px;
+box-sizing: border-box;
+border: solid 2px transparent;
+border-top-color: #29d;
+border-left-color: #29d;
+border-radius: 50%;
+-webkit-animation: nprogress-spinner 400ms linear infinite;
+animation: nprogress-spinner 400ms linear infinite;
+border-bottom: 2px solid #29d;
+opacity: .5;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0%   { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes nprogress-spinner {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+</style>
+
+<div class="spinner"></div>
+</body>
+</html>
